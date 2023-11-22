@@ -42,4 +42,4 @@ formBack.addEventListener('submit', e => {
   localStorage.removeItem('feedback-form-state');
 });
 
-const throttledForm = throttle(saveFormData, 500);
+const throttledFormAdd = throttle(saveFormData, 500);
