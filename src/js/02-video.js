@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const saveTimeThrottled = throttle(currentTime => {
   localStorage.setItem('videoplayer-current-time', currentTime);
-}, 2000);
+}, 1000);
 
 player.on('timeupdate', data => {
   const currentTime = data.seconds;
